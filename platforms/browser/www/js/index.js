@@ -31,7 +31,6 @@ document.addEventListener('deviceready', function () {
   
   // Show an alert box if a notification comes in when the user is in your app.
   window.plugins.OneSignal.enableInAppAlertNotification(true);
-
 }, false); 
  
  
@@ -46,6 +45,8 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
+        document.getElementById("siteContainer").innerHTML = '<iframe src="http://prykarpattya.org/appview.php" width="100%" height="100%" align="left" style="position: absolute;top: 0;left: 0;border: 0px;">Ваш браузер не поддерживает</iframe>';
+
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
@@ -57,6 +58,8 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+
+
 /*        var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
