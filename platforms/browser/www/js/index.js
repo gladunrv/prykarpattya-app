@@ -32,10 +32,6 @@ document.addEventListener('deviceready', function () {
   // Show an alert box if a notification comes in when the user is in your app.
   window.plugins.OneSignal.enableInAppAlertNotification(true);
 
-
-  document.getElementById("siteContainer").innerHTML = '<iframe src="http://prykarpattya.org/appview.php" width="100%" height="100%" align="left" style="position: absolute;top: 0;left: 0;border: 0px;">Ваш браузер не поддерживает</iframe>';
-
-
 }, false); 
  
  
